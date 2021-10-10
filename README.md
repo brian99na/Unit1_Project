@@ -19,8 +19,7 @@ This project is to demonstrate my understanding of HTML, CSS, and Javascript. It
 
 
 ## Wireframes
-
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
+ 
 
 - [Mobile](https://www.figma.com/file/XgTnThH1QL7RtnNydRZkwf/Project-1-Mobile-View)
 - [Desktop](https://www.figma.com/file/LAPGHsuWdD9Pp2MKEoHuYD/Project-1-Desktop-View)
