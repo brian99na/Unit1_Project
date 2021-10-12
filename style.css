@@ -1,6 +1,7 @@
 h1 {
     text-align: center;
-    max-height: 100%
+    max-height: 100%;
+    color: black;
 }
 
 body {
@@ -8,16 +9,29 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: url();
+    background-position: center;
 }
 
 main {
-    max-width: 80%;
+    max-width: 1100px;
+    border-radius: 2em;
+
+}
+
+
+button:hover {
+    transform: scale(.95);
+    cursor: pointer;
+}
+
+nav {
     border-radius: 1em;
-    background-color: lightgray;
 }
 
 .sections {
     display: flex;
+    height: 500px;
 }
 
 #about {
@@ -52,16 +66,22 @@ img {
     width: 100%;
 }
 
-.buttons {
-    display: flex;
-    justify-content: space-evenly;
-}
 
 #button1, #button2, #button3 {
-    width: 100%;
+    max-width: 100%;
 } 
 
 #button3 {
     display: flex;
     align-items: center;
+}
+
+button {
+    display: flex;
+    border: none;
+    background-color: rgb(104, 184, 230);
+    color: white;
+    padding: 1em;
+    border-collapse: separate; 
+    border-radius: 20px;
 }
