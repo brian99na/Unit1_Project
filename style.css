@@ -1,58 +1,108 @@
-h1 {
-    text-align: center;
-    max-height: 100%;
-    color: black;
-}
-
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background: url();
-    background-position: center;
 }
 
 main {
     max-width: 1100px;
-    border-radius: 2em;
-
 }
 
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+.navbar-toggler {
+    text-align: right;  
+}
+
+.navbar .navbar-collapse {
+    text-align: right;
+}
+
+#title{
+    text-align: center;
+    color: black;
+    padding: 50px 0;
+    margin: 0;
+}
+
+.sections {
+    height: 100%;
+    border-bottom: 1px solid lightgray;
+}
+
+/* About Me */
+
+img {
+    height: 15em;
+    width: auto;
+    border-radius: 1em;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+    font-size: 12px;
+    gap: 1em;
+    width: 100%;
+}
+
+/* Projects */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 100%;
+    gap: 1em;
+    padding: 2em
+}
+
+#project3 {
+    display: none;
+}
+
+/* Buttons */
+
+#button1, #button2, .button3, #sendButton {
+    max-width: 100%;
+    border-radius: 10px;
+    align-content: flex-end;
+    
+} 
+
+#button3 {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-content: flex-end;
+}
+
+.button3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+button {
+    border: none;
+    background-color: rgb(17, 151, 230);
+    color: white;
+    padding: 1em;
+    margin: 10px;
+}
 
 button:hover {
     transform: scale(.95);
     cursor: pointer;
 }
 
-nav {
-    border-radius: 1em;
-}
-
-.sections {
-    display: flex;
-    height: 500px;
-}
-
-#about {
-    padding: 2em;
-}
-
-#details {
-    padding: 0 2em;
-}
-
-img {
-    height: 15em;
-    width: auto;
-    border-radius: 10em;
-}
-
-#projects {
-    width: 100%;
-    gap: 1em;
-    padding: 2em;
-}
+/* Skills */
 
 #skills {
     display: flex;
@@ -60,28 +110,38 @@ img {
 }
 
 #skills ul {
+    padding: 0;
+    margin: 0;
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
     width: 100%;
 }
 
-
-#button1, #button2, #button3 {
-    max-width: 100%;
-} 
-
-#button3 {
-    display: flex;
-    align-items: center;
+#skill4, #skill5 {
+    display: none;
 }
 
-button {
+/* Contact Page */
+
+footer {
     display: flex;
-    border: none;
-    background-color: rgb(104, 184, 230);
-    color: white;
-    padding: 1em;
-    border-collapse: separate; 
-    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+    gap: 1em;
+}
+
+footer > * {
+
+}
+
+input {
+    border-radius: 1em;
+    border: 1px solid rgb(17, 151, 230);
+
+}
+
+#inp1 {
+    display: none;
 }
