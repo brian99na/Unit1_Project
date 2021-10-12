@@ -12,7 +12,7 @@ body {
 
 main {
     max-width: 80%;
-    padding: 2em;
+    border-radius: 1em;
     background-color: lightgray;
 }
 
@@ -37,10 +37,31 @@ img {
 #projects {
     width: 100%;
     gap: 1em;
+    padding: 2em;
+}
+
+#skills {
+    display: flex;
+    justify-content: center;
 }
 
 #skills ul {
     display: flex;
     list-style-type: none;
-    max-width: 33%;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#button1, #button2, #button3 {
+    width: 100%;
+} 
+
+#button3 {
+    display: flex;
+    align-items: center;
 }
