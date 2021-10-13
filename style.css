@@ -72,22 +72,22 @@ a {
 /* About Me */
 
 img {
-  height: 15em;
-  width: auto;
-  border-radius: 1em;
+  width: 50%;
+  border-radius: 20em;
 }
 
 #about {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 2em;
-  font-size: 12px;
+  font-size: 20px;
   max-width: 100%;
   gap: 1em;
 }
 
-#details {
-  font-size: 1.2em;
+#details > * {
+  margin: 0 0 .5em 0;
 }
 
 /* Projects */
@@ -182,15 +182,17 @@ button:hover {
   flex-direction: column;
   align-items: center;
   width: 33.33%;
+  text-align: center;
 }
 
 #skill4, #skill5 {
   display: none;
 }
 
-#skillsList i {
+i {
   font-size: 50px;
-  color: rgb(238, 225, 50)
+  color: rgb(197, 29, 29);
+  padding: .5em;
 }
 
 /* Contact Page */
@@ -216,10 +218,6 @@ input {
   max-width: 100%;
 }
 
-textarea {
-  
-}
-
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
@@ -239,11 +237,17 @@ textarea {
   }
 
   #about {
-    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #about img {
+    max-height: 100%;
+    max-width: 33.33%;
   }
 
   #details p, #details h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   #project3 {
