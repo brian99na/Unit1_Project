@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-    font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
+}
+
+.flex {
+  display:flex;
 }
 
 body {
@@ -18,29 +22,29 @@ main {
   max-width: 1100px;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
+nav {
   background-color: rgb(241, 241, 241);
-  padding: 1em 0;
+  padding: 1em;
+}
+
+nav ul {
+  display: none;
+  flex-direction: column;
+  padding: 0;
   margin: 0;
+  gap: 1em;
   height: 100%;
 }
 
 nav ul li {
+  display: flex;
+  align-items: center;
   list-style-type: none;
-  padding: .5em;
-  border-radius: 1em;
-  border: 1px solid black
 }
 
 a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 #title {
@@ -72,7 +76,6 @@ img {
   gap: 1em;
 }
 
-
 /* Projects */
 
 #projects {
@@ -80,16 +83,22 @@ img {
   flex-direction: column;
   justify-self: center;
   max-width: 100%;
-  gap: 1em;
+  gap: 0.5em;
   padding: 2em;
 }
 #project3 {
   display: none;
 }
 
-#projectsTitle, #skillsTitle {
-    font-size: 32px;
-    margin: 1em 0 0 0;
+#projects h2 {
+  margin: 0;
+}
+
+#projectsTitle,
+#skillsTitle {
+  font-size: 32px;
+  margin: 0;
+  max-height: 100%;
 }
 
 /* Buttons */
@@ -99,7 +108,7 @@ img {
 .button3,
 #sendButton {
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: 0.4em;
   align-content: flex-end;
 }
 
@@ -130,6 +139,10 @@ button:hover {
   cursor: pointer;
 }
 
+#project2href {
+  color: white;
+}
+
 /* Skills */
 
 #skills {
@@ -137,6 +150,7 @@ button:hover {
   flex-direction: column;
   max-width: 100%;
   padding: 2em;
+  gap: 1em;
 }
 
 #skills ul {
@@ -153,9 +167,20 @@ button:hover {
   display: none;
 }
 
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#skillsList i {
+  font-size: 50px;
+}
+
 /* Contact Page */
 
-footer {
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,15 +189,12 @@ footer {
   max-width: 100%;
 }
 
-footer h2 {
-    margin: 20px 0 0 0;
+form h2 {
+  margin: 20px 0 0 0;
 }
 
 input {
-  border-radius: 1em;
+  border-radius: 0.2em;
   border: 1px solid rgb(17, 151, 230);
-}
-
-#inp1 {
-  display: none;
+  max-width: 100%;
 }

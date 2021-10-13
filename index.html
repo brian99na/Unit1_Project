@@ -16,7 +16,8 @@
     <h1 id="title">Brian's Portfolio</h1>
     <main>
       <nav>
-        <ul>
+        <a><i class="fas fa-bars" id="ham"></i></a>
+        <ul id="navul">
           <li><a href="#about">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -50,7 +51,14 @@
             This calculator uses javascript functions to perform basic
             mathematical tasks.
           </p>
-          <button id="button2">Check out the code here</button>
+          <button id="button2">
+            <a
+              target="_blank"
+              href="https://codepen.io/brian99na/pen/OJgOaeO"
+              id="project2href"
+              >Check out the code here</a
+            >
+          </button>
         </div>
         <div id="project3">
           <img src="" alt="" />
@@ -68,19 +76,19 @@
         </div>
       </section>
       <section class="sections" id="skills">
-        <h1 id='skillsTitle'>Skills</h1>
-        <div id='skillsList'>
+        <h1 id="skillsTitle">Skills</h1>
+        <div id="skillsList">
           <ul>
             <li>
-              <i class="fa-brands fa-html5"></i>
+              <i class="fas fa-file-code"></i>
               <h3>HTML</h3>
             </li>
             <li>
-              <img src="" alt="" />
+              <i class="fab fa-css3"></i>
               <h3>CSS</h3>
             </li>
             <li>
-              <img src="" alt="" />
+              <i class="fab fa-js"></i>
               <h3>Javascript</h3>
             </li>
             <li id="skill4">
@@ -95,13 +103,19 @@
         </div>
       </section>
       <footer>
-        <h2>Contact Me</h2>
-        <input type="text" id="inp1" />
-        <input type="text" id="inp2" />
-        <button id="sendButton">Send</button>
+        <form>
+          <h2>Contact Me</h2>
+          <input type="text" id="inp1" />
+          <textarea name="Text1" cols="20" rows="5"></textarea>
+          <button id="sendButton">Send</button>
+        </form>
       </footer>
     </main>
-
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js" async defer></script>
   </body>
 </html>
