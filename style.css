@@ -64,6 +64,11 @@ a {
   color: black;
 }
 
+#ham {
+  font-size: 24px;
+  padding: 0;
+}
+
 .sections {
   height: 100%;
   border-bottom: 1px solid lightgray;
@@ -200,6 +205,7 @@ i {
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 1em 0;
   gap: 1em;
@@ -263,6 +269,25 @@ input {
   }
 
   form {
-    height: 200%;
+    height: 25vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #title {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  #navul a, # {
+    font-size: 24px;
+  }
+
+  form {
+    height: 50vh;
   }
 }
