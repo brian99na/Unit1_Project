@@ -6,9 +6,9 @@
 |---|---| ---|
 |Day 1| Project Markdown | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline | Complete
-|Day 2| Fill in the majority of the HTML info with some basic CSS styling | Incomplete
-|Day 3| Media queries, flex/grid, jQuery for buttons, forms, etc. | Incomplete
-|Day 4| MVP & Bug Fixes | Incomplete
+|Day 2| Fill in the majority of the HTML info with some basic CSS styling | Complete
+|Day 3| Media queries, flex/grid, jQuery for buttons, forms, etc. | Complete
+|Day 4| MVP & Bug Fixes | Complete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
 
@@ -36,11 +36,11 @@ Wireframing Resource Used:
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Basic HTML | H | 1.5hr | hr |
-| Basic CSS | H | 1.5hr | hr |
-| Flex/Grid | H | 3hr | hr |  
-| Desktop Media Queries | H | 3hr|  hr | 
-| jQuery Event Listeners | M | 3.5hr | hr|
+| Basic HTML | H | 1.5hr | 1 hr |
+| Basic CSS | H | 1.5hr | 1 hr |
+| Flex/Grid | H | 3hr | 2 hr |  
+| Desktop/Tablet Media Queries | H | 3hr|  1hr | 
+| jQuery Event Listeners | M | 3.5hr | 20 min. |
 | Aesthetics | L | 2hr |  hr |
 | Total | H | 14.5hrs| hrs |
 
