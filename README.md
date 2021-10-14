@@ -36,11 +36,11 @@ Wireframing Resource Used:
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Basic HTML | H | 1.5hr | hr |
-| Basic CSS | H | 1.5hr | hr |
-| Flex/Grid | H | 3hr | hr |  
-| Desktop Media Queries | H | 3hr|  hr | 
-| jQuery Event Listeners | M | 3.5hr | hr|
+| Basic HTML | H | 1.5hr | 1 hr |
+| Basic CSS | H | 1.5hr | 1 hr |
+| Flex/Grid | H | 3hr | 2 hr |  
+| Desktop/Tablet Media Queries | H | 3hr|  1hr | 
+| jQuery Event Listeners | M | 3.5hr | 20 min. |
 | Aesthetics | L | 2hr |  hr |
 | Total | H | 14.5hrs| hrs |
 
