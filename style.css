@@ -196,7 +196,7 @@ button:hover {
 
 i {
   font-size: 50px;
-  color: rgb(197, 29, 29);
+  color: rgb(80, 80, 80);
   padding: .5em;
 }
 
@@ -281,6 +281,8 @@ input {
     font-size: 80px;
     display: flex;
     align-items: center;
+    transition: 2s;
+    animation: titleMove 2s forwards;
   }
 
   #navul a, # {
