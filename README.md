@@ -6,9 +6,9 @@
 |---|---| ---|
 |Day 1| Project Markdown | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline | Complete
-|Day 2| Fill in the majority of the HTML info with some basic CSS styling | Incomplete
-|Day 3| Media queries, flex/grid, jQuery for buttons, forms, etc. | Incomplete
-|Day 4| MVP & Bug Fixes | Incomplete
+|Day 2| Fill in the majority of the HTML info with some basic CSS styling | Complete
+|Day 3| Media queries, flex/grid, jQuery for buttons, forms, etc. | Complete
+|Day 4| MVP & Bug Fixes | Complete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
 
