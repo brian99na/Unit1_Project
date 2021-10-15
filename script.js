@@ -1,7 +1,41 @@
+//navbar animation
 const hamburg = $('#ham')
 const navUl = $('#navul')
 
 hamburg.on('click', function(){
     navUl.slideToggle(400);
     navUl.toggleClass('flex')
+})
+
+// Rock Paper Scissors
+
+let choices = ["rock", "paper", "scissor"]
+
+function game(e){
+  const userInput = e.target.id;
+  const randomNum = Math.floor(Math.random() * 3);
+  const userIndex = choices.indexOf(userInput);
+  console.log(userInput)
+  console.log(userIndex)
+  console.log(choices[randomNum])
+  if (userIndex === randomNum) {
+    $('#project3').append($(`<p class="gameMsg">Tie, I chose ${choices[randomNum]}. Try again.</p>`));
+  } else if ((userIndex + 1)%3 === randomNum) {
+    $('#project3').append($(`<p class="gameMsg">I chose ${choices[randomNum]}. You lose.</p>`));
+    $('.button3').remove()
+  } else {
+    $('#project3').append($(`<p class="gameMsg">I chose ${choices[randomNum]}. You win!</p>`));
+    $('.button3').remove()
+  } 
+}
+
+$('#rock').on('click', game);
+$('#paper').on('click', game);
+$('#scissor').on('click', game);
+
+//Form
+
+$('form').on('submit', function(e){
+  e.preventDefault()
+  $('form').html("<h2>Thanks for the message,<br>I'll get back to you soon!</h2>")
 })

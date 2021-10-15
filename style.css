@@ -248,7 +248,7 @@ input {
   }
 
   #about img {
-    max-height: 100%;
+    max-height: 50%;
     max-width: 33.33%;
   }
 
@@ -269,7 +269,7 @@ input {
   }
 
   form {
-    height: 25vh;
+    height: 50vh;
   }
 }
 
