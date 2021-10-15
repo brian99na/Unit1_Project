@@ -39,3 +39,10 @@ $('form').on('submit', function(e){
   e.preventDefault()
   $('form').html("<h2>Thanks for the message,<br>I'll get back to you soon!</h2>")
 })
+
+//Scroll
+
+window.addEventListener("scroll", (event) => {
+  let scroll = this.scrollY;
+  console.log(scroll)
+});
