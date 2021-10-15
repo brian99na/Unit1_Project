@@ -45,4 +45,16 @@ $('form').on('submit', function(e){
 window.addEventListener("scroll", (event) => {
   let scroll = this.scrollY;
   console.log(scroll)
+  let scrollFloor = Math.floor(scroll/10)
+  if (scrollFloor < 10 && scrollFloor > 0) {
+    $('#bg-img').attr('src', `/new/000${scrollFloor}.jpg`)
+  } else if (scrollFloor < 100 && scrollFloor > 10){
+    $('#bg-img').attr('src', `/new/00${scrollFloor}.jpg`)
+  }else if (scrollFloor > 100 && scrollFloor < 180){
+    $('#bg-img').attr('src', '/new/0100.jpg')
+  } else if (scrollFloor > 180 && scrollFloor < 221) {
+    $('#bg-img').attr('src', `/new/0${scrollFloor}.jpg`)
+  } else if (scrollFloor > 220) {
+    $('#bg-img').attr('src', `/new/0220.jpg`)
+  }
 });

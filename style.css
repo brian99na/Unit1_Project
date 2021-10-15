@@ -19,11 +19,18 @@ html {
   margin: 0;
 }
 
+#bg-img {
+  position: fixed;
+  z-index: -1;
+  aspect-ratio: 16/9;
+  height: 100vh;
+}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(34, 34, 34);
+  background-color: black;
 }
 
 main {
@@ -81,7 +88,7 @@ a {
 
 /* About Me */
 
-img {
+#pfp {
   width: 50%;
   border-radius: 20em;
 }
@@ -110,9 +117,7 @@ img {
   gap: 0.5em;
   padding: 2em;
 }
-#project3 {
-  display: none;
-}
+
 
 #projects h2 {
   margin: 0;
@@ -161,7 +166,6 @@ button {
 button:hover, a:hover {
   transform: scale(0.95);
   cursor: pointer;
-  background-color: lightgray;
 }
 
 #project2href {
@@ -216,7 +220,7 @@ form {
   padding: 1em 0;
   gap: 1em;
   max-width: 100%;
-  background-color: rgb(34, 34, 34);
+  background-color: rgba(0, 0, 0, 1)
 }
 
 form h2 {
@@ -226,7 +230,7 @@ form h2 {
 
 input {
   border-radius: 0.5em;
-  width: 100px;
+  width: 15em;
   max-width: 100%;
 }
 
@@ -277,24 +281,32 @@ input {
   form {
     height: 50vh;
   }
+
+  form h2 {
+    font-size: 2em;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   #title {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 95vh;
     font-size: 80px;
     display: flex;
     align-items: center;
     transition: 2s;
   }
-  
+
   #navul a, # {
     font-size: 24px;
   }
 
   form {
     height: 50vh;
+  }
+
+  form h2 {
+    font-size: 2.5em;
   }
 }
