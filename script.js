@@ -47,14 +47,14 @@ window.addEventListener("scroll", (event) => {
   console.log(scroll)
   let scrollFloor = Math.floor(scroll/10)
   if (scrollFloor < 10 && scrollFloor > 0) {
-    $('#bg-img').attr('src', `https://raw.githubusercontent.com/brian99na/project_1/main/new/000${scrollFloor}.jpg`)
+    $('#bg-img').attr('src', `https://raw.githubusercontent.com/brian99na/project_1/main/new/000${scrollFloor}-min.jpg`)
   } else if (scrollFloor < 100 && scrollFloor > 10){
-    $('#bg-img').attr('src', `https://raw.githubusercontent.com/brian99na/project_1/main/new/00${scrollFloor}.jpg`)
+    $('#bg-img').attr('src', `https://raw.githubusercontent.com/brian99na/project_1/main/new/00${scrollFloor}-min.jpg`)
   }else if (scrollFloor > 100 && scrollFloor < 180){
-    $('#bg-img').attr('src', 'https://raw.githubusercontent.com/brian99na/project_1/main/new/0100.jpg')
+    $('#bg-img').attr('src', 'https://raw.githubusercontent.com/brian99na/project_1/main/new/0100-min.jpg')
   } else if (scrollFloor > 180 && scrollFloor < 221) {
-    $('#bg-img').attr('src', `https://raw.githubusercontent.com/brian99na/project_1/main/new/0${scrollFloor}.jpg`)
+    $('#bg-img').attr('src', `https://raw.githubusercontent.com/brian99na/project_1/main/new/0${scrollFloor}-min.jpg`)
   } else if (scrollFloor > 220) {
-    $('#bg-img').attr('src', `https://raw.githubusercontent.com/brian99na/project_1/main/new/0220.jpg`)
+    $('#bg-img').attr('src', `https://raw.githubusercontent.com/brian99na/project_1/main/new/0220-min.jpg`)
   }
 });
