@@ -303,6 +303,10 @@ input {
     transition: 2s;
   }
 
+  #title h1 {
+    font-size: 80px;
+  }
+
   #navul a, # {
     font-size: 24px;
   }
