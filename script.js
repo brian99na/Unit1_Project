@@ -1,3 +1,13 @@
+//loading all images
+$( document ).ready(function() {
+  let count = 1
+  while (count <= 220) {
+    let imageNum = count.padStart(4, '0')
+    $('#hidden-bg-img').attr('src', `./Compressed/${imageNum}-min.jpg`)
+    count++
+  }
+});
+
 //navbar animation
 const hamburg = $('#ham')
 const navUl = $('#navul')
